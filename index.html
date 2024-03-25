@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The sound of a string</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <div class="container">
+        <div class="parameter_values">
+            <div class="parameter_a">
+                <div class="a-container">
+                    <span>a=</span>
+                    <div class="select-container">
+                        <div class="value_a">1</div>
+                        <div id="a-select" class="a-select">
+                            <div class="selected a-li">1</div>
+                            <div class="a-li">10</div>
+                            <div class="a-li">100</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parameter_b">
+                <div class="b-container">
+                    <span>b=</span>
+                    <div class="select-container">
+                        <div class="value_b">0.1</div>
+                        <div id="b-select" class="b-select">
+                            <div class="selected b-li">0.1</div>
+                            <div class="b-li">0.3</div>
+                            <div class="b-li">0.5</div>
+                            <div class="b-li">0.8</div>
+                            <div class="b-li">0.9</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn_disturbance">Возмущенная функция</button>
+            <button class="btn_nondisturbance">Невозмущенная функция</button>
+        </div>
+        <audio src="./audio/a_1b_0_1.wav"></audio>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
