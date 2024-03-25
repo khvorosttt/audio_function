@@ -78,3 +78,7 @@ body {
 .selected {
     background-color: #95999b;
 }
+.a-li:hover,
+.b-li:hover {
+    background-color: #95999b;
+}
