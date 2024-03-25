@@ -8,7 +8,7 @@ body {
     width: 100vw;
 }
 .container {
-    background: url(./imgs/background.jpg); 
+    background: url(../imgs/background.jpg); 
     width: 600px;
     height: 370px;
     border-radius: 20px;
