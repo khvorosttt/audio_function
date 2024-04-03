@@ -82,3 +82,24 @@ body {
 .b-li:hover {
     background-color: #95999b;
 }
+
+@media(max-width: 768px) {
+    .container {
+        background: url(../imgs/background-mobile.jpg); 
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        width: 300px;
+        align-self: center;
+    }
+}
