@@ -19,7 +19,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-.parameter_values {
+.parameter_values,
+.parameter_melody {
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -33,7 +34,8 @@ body {
     display: flex;
 }
 .a-select,
-.b-select {
+.b-select,
+.melody-select {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -45,7 +47,8 @@ body {
     display: block;
 }
 .value_a,
-.value_b {
+.value_b,
+.value_melody {
     cursor: pointer;
 }
 .a-container,
@@ -59,20 +62,49 @@ body {
     gap: 10px;
     justify-content: center;
 }
-.buttons {
+
+.melody_name {
+    width: 130px;
+    font-size: 30px;
+}
+.melody-container {
+    width: 360px;
+    gap: 20px;
+    height: 70px;
+    display: flex;
+    background: #f1f1f1;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.melody-li,
+.value_melody {
+    font-size: 22px;
+}
+
+.buttons,
+.buttons_melody {
     display: flex;
     justify-content: center;
     gap: 40px;
 }
 .btn_disturbance,
-.btn_nondisturbance {
+.btn_nondisturbance,
+.melody_btn_disturbance,
+.melody_btn_nondisturbance {
     padding: 10px;
     cursor: pointer;
     border-radius: 10px;
     background-color: #95999b;
 }
 .btn_disturbance:hover,
-.btn_nondisturbance:hover {
+.btn_nondisturbance:hover,
+.melody_btn_disturbance:hover,
+.melody_btn_nondisturbance:hover {
     background-color: #948a7b;
 }
 .selected {
@@ -94,12 +126,28 @@ body {
         padding: 5px;
     }
 
-    .buttons {
+    .buttons,
+    .buttons_melody {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 40px;
         width: 300px;
         align-self: center;
+    }
+
+    .melody-container {
+        width: 300px;
+        gap: 20px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        background: #f1f1f1;
+        padding: 10px;
+        font-size: 30px;
+        border-radius: 10px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
     }
 }
