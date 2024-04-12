@@ -26,7 +26,8 @@ body {
     justify-content: center;
 }
 .a-li,
-.b-li {
+.b-li,
+.melody-li {
     cursor: pointer;
 }
 .a-container,
@@ -111,7 +112,8 @@ body {
     background-color: #95999b;
 }
 .a-li:hover,
-.b-li:hover {
+.b-li:hover,
+.melody-li:hover {
     background-color: #95999b;
 }
 
